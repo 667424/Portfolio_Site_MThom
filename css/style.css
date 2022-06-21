@@ -92,3 +92,8 @@ a:active {
   text-transform: uppercase;
   border: 2px solid #477578
 }
+/* layout styling */
+
+.container {
+  padding: 0 15px;
+}
