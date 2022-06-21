@@ -1,8 +1,8 @@
 body {
-  background-color: #F0FFFF
+  background-color: none;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.6;
   color: #013141;
 }
@@ -19,7 +19,7 @@ h2 {
 }
 h3 {
   font-size: 1.875em;
-  font-weight: 300;
+  font-weight: 400;
 }
 h4 {
   font-size: 1.35em;
@@ -94,6 +94,14 @@ a:active {
 }
 
 /* layout styling */
+header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0px;
+  box-shadow: 7px 7px 6px 0px rgba(165, 194, 195, 0.85);
+  position: fixed;
+  width: 100%;
+}
 .container {
   padding: 0 15px;
 }
@@ -108,4 +116,43 @@ a:active {
 }
 #hngcasestudy h1 {
   text-align: center; /*centers text*/
+}
+.logo {
+  max-width: 250px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: 013141;
+}
+nav > ul > li > a:visited {
+  color: #C55228
+}
+nav > ul > li > a:hover {
+  opacity: .75;
+  text-decoration: none;
+}
+nav > ul > li > a:active {
+  color: #013141
+}
+#hero {
+  background-color: #EDFAF8;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#myprojects{
+  background-color: #EDFAF8;
+  padding: 20px 0;
+}
+main {
+  padding-top: 162.06px;
 }
