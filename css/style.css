@@ -30,6 +30,8 @@ h4 {
 }
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 a{
   color: #477578;
@@ -51,10 +53,11 @@ a:active {
   background-color: #12494D;
   color: #F0FFFF;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #12494D;
-  transition: 0.2s opacity;
+  transition: 0.3s opacity, 0.5s background-color, 0.4s font-size;
 }
 .button:visited {
   display:inline-block;
@@ -75,6 +78,7 @@ a:active {
   background-color: #477578;
   color: #FOFFFF;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #12494D;
@@ -86,8 +90,8 @@ a:active {
   border: 2px solid #477578
 }
 .button.contact:hover {
-  background-color: #477578;
-  color: Azure
+  background-color: #EDFAF8;
+  font-size: 20px;
 }
 .button.contact:active {
   background-color: transparent;
@@ -180,6 +184,29 @@ main {
 [class*="col-"] {
   float: left;
   padding: 10px;
+}
+/*================================== CSS Animation ==================================== */
+@keyframes color-change {
+  0% {fill: #EDC655}
+  50% { fill: #D8991D}
+  100% {fill: #C55228}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px,48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 /*==================================
 Medium devices (640px and larger)
